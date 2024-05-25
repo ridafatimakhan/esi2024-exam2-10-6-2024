@@ -1,0 +1,32 @@
+###   Add a patient's data
+POST  http://localhost:8083/api/patient HTTP/1.1
+content-type: application/json
+
+{
+    "patientId": "10",
+    "patientName": "John Doe",
+    "patientData": "Medical Data of John Doe"   
+}
+
+
+
+###  Book an appointment
+POST  http://localhost:8084/api/appointment HTTP/1.1
+content-type: application/json
+
+{
+    "appointmentid": "001",
+    "patientId": "10",
+    "patientName": "John Doe",
+    "drId": "001",   
+    "date": "10-6-2024:12:00"
+}
+
+
+###  Get  Dr's appointments + patients data
+http://localhost:8085/api/appointment
+
+
+### Can be useful when doing Task X
+
+http://localhost:8083/api/patient/01
