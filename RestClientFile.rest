@@ -27,6 +27,3 @@ content-type: application/json
 http://localhost:8085/api/appointment
 
 
-### Can be useful when doing Task X
-
-http://localhost:8083/api/patient/01
