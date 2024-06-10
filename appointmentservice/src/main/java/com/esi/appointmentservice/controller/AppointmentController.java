@@ -22,8 +22,10 @@ public class AppointmentController {
 
     @PostMapping("/appointment")
     public ResponseEntity<String> appointmentBooked(@RequestBody AppointmentDto appointmentDto) {
+        // Task 2.1
         appointmentService.appointmentBooked(appointmentDto);
         return ResponseEntity.ok("An appointment has been recieved");
 
     }
+
 }

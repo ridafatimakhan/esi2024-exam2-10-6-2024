@@ -27,4 +27,5 @@ public class PatientController {
         patientService.addPatientInfo(patientDto);
         return ResponseEntity.ok("Patient info recieved");
     }
+
 }
